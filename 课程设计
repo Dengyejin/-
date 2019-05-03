@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Finish</title>
+	<style>
+		*{  padding: 0px;
+			margin:0px;
+			list-style: none; }
+		ul li a{
+			text-decoration: none;
+			text-align: center;
+			color: gray;
+			line-height: 30px;
+		}
+
+		#caption {
+			position: relative;
+			margin-left: 350px;
+			margin-top: 0px;
+			line-height: 1px;
+		}
+		#caption li{
+			text-align: center;
+			color: white;
+			border-bottom: 1px solid gray;
+		/*	width: 50px;
+			height: 80px;*/
+		}
+		#list{
+			position: absolute;
+			margin-left: 350px;
+			margin-top: 0px;
+			z-index: 9999;
+		}
+		#list li{
+			text-align: center;
+			width: 250px;
+			height: 80px;
+			background: #ccffff;
+			border-bottom: 1px solid gray;
+		}
+		#a1,#b1,#c1,#d1,#e1{
+			margin-left:250px;
+			margin-top:-60px;
+			display: none;
+			z-index: 2px;
+		}
+		
+		#a1,#b1,#c1,#d1,#e1 li{
+			color: gray;
+		}
+
+		#list li:hover #a1{display: block;}
+		#list li:hover #b1{display: block;}
+		#list li:hover #c1{display: block;}
+		#list li:hover #d1{display: block;}
+		#list li:hover #e1{display: block;}		
+
+		#list1{
+			position: absolute;
+			margin-top: -30px;
+			margin-left: 600px;
+			
+		}
+		#list1 a{
+			text-decoration: none;
+			color: black;
+			text-align: center;
+			padding:20px;
+		}
+		#wrap{
+			margin-left: 650px;
+			margin-top: 30px;
+			width: 773px;
+			height: 302px;
+			position: relative;
+			overflow: hidden;
+		}
+		#pic li{
+				width: 773px;
+				height: 302px;
+			}
+
+		#list2{
+			position: absolute;
+			right: 10px;
+			bottom: 10px;
+		}
+
+		#list2 li{
+			float: left;
+			background: #f90;
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+			margin-right: 1px;
+			text-align: center;
+			border-radius: 50%;
+		}
+
+		#list2 .on{
+			background: blue;
+			color: #fff;
+			font-weight: bold;
+		}
+		
+		#icon{
+			position: relative;
+			margin-top: 20px;
+			margin-left: 650px;
+		}
+
+		#icon a{
+				margin: 8px;
+		}
+
+	#list3{
+	position: relative;
+	margin-top: -400px;
+	margin-left: 1450px;
+
+}
+
+	#information{
+		position: absolute;
+		margin-left: 750px;
+	}
+
+	#information td{
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+	<!-- 左导航栏 -->
+	<div style="margin-left:355px;margin-top: 100px;">
+	<img src="D:\Html 5\document\logo.jpg" alt="W3CLOGO">
+	</div>
+	<div id="bodystyle">
+	<body background="D:\Html 5\document\海2.jpg">
+	</div>
+	<ul id="caption">
+		<li style="background: pink;width: 250px;height: 40px;"><a href="#">免费教程分类</a></li>
+		
+	</ul>
+	<ul id="list">
+		<li><a href="#">前端开发<br>Web前端开发 HTML5</a>
+			<ul id="a1">
+				<li><a href="#">基础教程</a></li>
+				<li><a href="#">进阶学习</a></li>
+				<li><a href="#">拓展阅读</a></li>
+			</ul></li>
+		<li><a href="#">后端开发<br>PHP开发 Java开发</a>
+			<ul id="b1">
+				<li><a href="#">PHP开发</a></li>
+				<li><a href="#">Java开发</a></li>
+				<li><a href="#">客户端开发</a></li>
+			</ul></li>
+		<li><a href="#">移动开发<br>Android开发 ios开发</a>
+			<ul id="c1">
+				<li><a href="">Android开发</a></li>
+				<li><a href="">ios开发</a></li>
+				<li><a href="">混合开发</a></li>
+			</ul></li>
+		<li><a href="#">数据库<br>关系类型数据库 NoSQL</a>
+			<ul id="d1">
+				<li><a href="#"></a>关系型数据库</li>
+				<li><a href="#"></a>NoSQL</li>
+			</ul></li>
+		<li><a href="#">云计算&大数据<br>大数据</a>
+			<ul id="e1">
+				<li><a href="#"></a>大数据</li>
+			</ul></li>
+		
+	</ul>
+	<!-- 下拉导航栏 -->	
+	<nav id="list1">
+		<a href="#">编程入门<sup style="font-size: 1px;color: white;background: green;">FREE</sup></a>
+		<a href="#">编程课程<sup style="font-size: 1px;color: white;background: red;">HOT</sup></a>
+		<a href="#">实战训练<sup style="font-size: 1px;color: white;background: red;">HOT</sup></a>
+		<a href="#">极客文档</a>
+		<a href="#">学院</a>
+		<a href="#">百宝箱</a>
+		<a href="#">在线工具</a>
+		<a href="#">会员<sup style="font-size: 1px;background: yellow;color: white;">VIP</sup></a>
+	</nav>
+
+	<!-- 焦点轮播 -->
+	<div id="wrap">
+		<ul id="pic">
+			<li><img src="D:\Html 5\document\01.jpg" alt=""></li>
+			<li><img src="D:\Html 5\document\02.jpg" alt=""></li>
+			<li><img src="D:\Html 5\document\03.jpg" alt=""></li>
+			<li><img src="D:\Html 5\document\04.jpg" alt=""></li>
+			<li><img src="D:\Html 5\document\05.jpg" alt=""></li>
+		</ul>
+		<ol id="list2" type="a">
+			<li class="on">1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		</ol>
+	</div>
+	<script>
+		var pic=document.getElementById("pic");
+		var list2=document.getElementById("list2").getElementsByTagName("li");
+		var index=0;
+		var time=null;
+
+		function auto(){
+			time=setInterval(function(){
+				index++;
+				if(index>=list2.length){
+					index=0;
+				}
+				change(index)
+			},2000)
+		}
+		auto();
+
+		function change(curIndex){
+			pic.style.marginTop=-302*curIndex+"px";
+			for(var i=0;i<list2.length;i++){
+				list2[i].className="";
+			}
+			list2[curIndex].className="on";
+			index=curIndex;
+		}
+
+		pic.onmouseover=function(){
+			clearInterval(time);
+			pic.style.cursor="pointer"
+		}
+		pic.onmouseleave=auto;
+
+		for(var i=0;i<list.length;i++){
+			list[i].id=i;
+			list[i].onmouseover=function(){
+				change(this.id)
+				this.style.cursor="pointer"
+			}
+		}
+	</script>
+
+	<!-- 图标 -->
+	<div id="icon">
+		<ul>
+			<a href="#"><img src="D:\Html 5\document\图标1.jpg" alt=""></a>
+			<a href="#"><img src="D:\Html 5\document\图标2.jpg" alt=""></a>
+			<a href="#"><img src="D:\Html 5\document\图标3.jpg" alt=""></a>
+			<a href="#"><img src="D:\Html 5\document\图标4.jpg" alt=""></a>
+	</div>
+
+	<!-- 登录表单 -->
+	<div id="list3">
+ 		<form action="">
+ 			<fieldset style="width: 260px;height: 150px;">
+ 			<br>
+			账号：<input type="text" name="phonenumber" placeholder="学号/手机/邮箱"><br><br>
+			密码：<input type="password" name="pwd" placeholder="登录密码"><br><br>
+			&nbsp;&nbsp;&nbsp;<input type="submit" value="立即登录">
+			&nbsp;&nbsp;&nbsp;<input type="submit" value="注册">
+		</fieldset>
+ 		</form>
+ 	</div>
+
+ 	<!-- 网站相关 -->
+ 	<hr style="margin-top: 350px;size: 3px;">
+ 	<div id="information">
+ 		<br><br>
+		<table>
+			<tr>
+				<th>网站相关</th>
+				<th>内容专区</th>
+				<th>常用链接</th>
+				<th>联系我们</th>
+			</tr>
+			<tr>
+				<td><a href="#">关于我们</a></td>
+				<td><a href="#">编程入门教程</a></td>
+				<td><a href="#">极客导航</a></td>
+				<td><a href="#">常见问题QA</a></td>
+			</tr>
+			<tr>
+				<td><a href="#">加入我们</a></td>
+				<td><a href="#">极客文档</a></td>
+				<td><a href="#">编程实战</a></td>
+				<td><a href="#">课程合作</a></td>
+			</tr>
+		</table>
+		Copyright©2019 亿动科技 w3cschool.cn All Rights Reserved. 闽ICP备15016281号-3
+ 	</div>
+</body>
+</html>
